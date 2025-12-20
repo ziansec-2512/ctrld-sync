@@ -1,11 +1,9 @@
 name: Sync
 
 on:
-  # Daily at 02:00 UTC
-  # Daily at 10:00 UTC
-  # Daily at 18:00 UTC
+  # Daily at every 6h UTC
   schedule:
-    - cron: "0 2,10,18 * * *"
+    - cron: "0 */6 * * *"
 
   # Manual trigger
   workflow_dispatch:
