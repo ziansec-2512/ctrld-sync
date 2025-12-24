@@ -1,7 +1,7 @@
 name: Sync
 
 on:
-  # Daily at every 12h UTC
+  # Daily at every 4h UTC
   schedule:
     - cron: "15 */4 * * *"
 
